@@ -186,7 +186,7 @@ async function sendOrder(e) {
   if (!checkForm()) {
     window.alert("complete form please");
   }
-  if (idProducts.length === 0) {
+  else if (idProducts.length === 0) {
     window.alert("ajoutez au moins un produit au panier pour commander svp");
   } else {
     let res = await fetch("http://localhost:3000/api/products/order", {
@@ -208,9 +208,7 @@ async function sendOrder(e) {
     });
     let data = await res.json();
     localStorage.clear();
-    window.location.replace(
-      `http://127.0.0.1:5501/front/html/confirmation.html?id=${data.orderId}`
-    );
+    document.location.href = `confirmation.html?id=${data.orderId}`;
   }
 }
 
