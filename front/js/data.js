@@ -21,4 +21,9 @@ function getCurrentId(){
     return id
 }
 
-export {getData, getCurrentId}
+function getCart(){
+    return JSON.parse(localStorage.getItem("aCart")) || []
+  }
+  
+
+export {getData, getCurrentId, getCart}

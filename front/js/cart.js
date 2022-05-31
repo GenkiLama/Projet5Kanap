@@ -1,5 +1,7 @@
-import { items, getCart } from "./utils.js";
-// import { getCart } from "./getCart.js"
+import { items } from "./utils.js";
+import { getCart } from './data.js'
+
+
 //affichage des éléments du panier
 //on récupère les données manquantes du panier ( prix , image , txt alt , nom )
 // grace à getDetails qui trouve dans items l'item avec la meme id que l'item en cours d'examen dans .map

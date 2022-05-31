@@ -1,5 +1,5 @@
-import { items, getCart } from "./utils.js";
-import { getCurrentId } from "./data.js";
+import { items } from "./utils.js";
+import { getCurrentId, getCart } from "./data.js";
 // import { getCart } from './getCart.js';
 
 const colorInput = document.getElementById("colors");
